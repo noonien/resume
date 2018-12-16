@@ -1,0 +1,32 @@
+{{if .}}
+<hr>
+<section id="skills">
+  <header>
+    <span class="fa fa-lg fa-code"></span>
+    <h2>Skills</h2>
+  </header>
+  <ul class="list-unstyled">
+    {{range .}}
+    <li class="card card-nested card-skills">
+      <div class="skill-level" rel="tooltip" title="{{title .Level}}" data-placement="left">
+        <div class="skill-progress {{.Level}}"></div>
+      </div>
+      <div class="skill-info">
+        <strong>{{.Name}}</strong>
+        <div class="space-top labels">
+          {{range .Keywords}}
+          <div class="label label-keyword">
+            {{$skill := splitn ";" 2 .}}
+            <span class="kw">{{$skill._0}}</span>
+            {{if $skill._1}}
+            <span class="notes">{{$skill._1 | trim}}</span>
+            {{end}}
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </li>
+    {{end}}
+  </ul>
+</section>
+{{end}}

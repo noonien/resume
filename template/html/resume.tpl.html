@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{.Name}}</title>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/resume.css">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="name">
+          <h1>{{.Name}}</h1>
+          <h3>{{.Info.Position}}</h3>
+        </div>
+
+        <div id="links">
+          <div class="web">
+            <a href="https://resume.mux.ro/">resume.mux.ro</a>
+          </div>
+          <div class="pdf">
+            <a href="https://resume.mux.ro/resume.pdf">resume.mux.ro/resume.pdf</a>
+          </div>
+          <div class="curl">
+            $ curl -L resume.mux.ro
+          </div>
+        </div>
+
+        {{block "contact" .Contact}}
+        <div id="contact">
+          <div class="email">
+            <a href="mailto:{{.Email}}">{{.Email}}</a>
+          </div>
+          <div class="website">
+            <a href="{{.Website}}">{{.Website}}</a>
+          </div>
+        </div>
+        {{end}}
+      </header>
+
+      {{if .Info.Summary}}
+      <hr>
+      <section id="summary">
+        <header>
+          <span class="fa fa-lg fa-info"></span>
+          <h2>Info</h2>
+        </header>
+        {{.Info.Summary | md}}
+      </section>
+      {{end}}
+
+      {{template "sections/skills" .Skills}}
+      {{template "sections/work" .Work}}
+      {{template "sections/interests" .Interests}}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{{if .}}
+<hr>
+<section id="interests">
+  <header>
+    <span class="fa fa-lg fa-bicycle"></span>
+    <h2>Interests</h2>
+  </header>
+  {{range .}}
+  <div>
+    <h3><em>{{.Name}}</em></h3>
+    {{template "partials/date" .Date}}
+    {{template "partials/keywords" .Keywords}}
+    {{template "partials/summary" .Summary}}
+  </div>
+  {{end}}
+</section>
+{{end}}

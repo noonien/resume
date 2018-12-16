@@ -1,0 +1,166 @@
+name: George Jiglău
+info:
+  position: Software Developer
+
+contact:
+  email: george@mux.ro
+  website: https://mux.ro
+
+location:
+  city: London
+  country: UK
+
+social:
+  - network: GitHub
+    username: noonien
+    url: https://github.com/noonien
+
+skills:
+- name: Distributed Systems
+  level: advanced
+  keywords: [
+    Instrumentation, Routing, Circuit breaking,
+    Fault tolerance, Discovery, Kubernetes, GCP
+  ]
+
+- name: Databases
+  level: advanced
+  keywords: [
+    PostgreSQL, MySQL, CockroachDB,
+    GCloud Datastore,
+    Redis, etcd, MongoDB, Neo4J,
+    Replication
+  ]
+
+- name: Polyglot
+  level: advanced
+  keywords: [
+    Go, Python, C#, C, C++, Java, CofeeScript, JavaScript,
+    Nim, Zig, Rust, Dart
+  ]
+
+- name: Embedded Systems
+  level: intermediate
+  keywords:
+  - ARM
+  - AVR
+  - Logic Analysis
+  - Low Level Comm Protocols
+  - Peripherals
+
+- name: Web Development
+  level: master
+  keywords:
+  - JavaScript
+  - CoffeeScript
+  - Backbone
+  - Gulp
+  - CSS
+  - HTML
+
+
+work:
+- company:
+    name: 3D Brothers
+    website: https://www.cgifarm.com
+    location:
+      city: Galati
+      country: Romania
+  position: Senior Software Engineer / Associate
+  date:
+    start: 2015-05
+  keywords: [
+    Go, Kubernetes, PostgreSQL, CockroachDB, GKE, Docker, CoreOS, Linux,
+    Python, C#, C, C++,
+    Redis, MongoDB, etcd, MySQL,
+    Gitlab, Git
+  ]
+  highlights:
+  - Developed a render farm management system, this included services that dealt with user interaction, file synchronization, scalable work distribution, render management
+  - Upgraded bitcoin mining firmware for auto-overclocking and better management
+  - Developed internal products for workload, pipeline, and project management for game developers
+
+- company:
+    name: ActiveMall
+    website: https://www.activemall.ro/
+    location:
+      city: Galati
+      country: Romania
+  position: Senior Software Developer
+  date:
+    start: 2013-05
+    end: 2015-05
+  keywords: [Go, Python, PostgreSQL, MySQL, Docker, Linux, LDAP, Git]
+  highlights:
+  - Created Go and Python backends for B2B integration, user interaction and for integrating existing products
+  - Developed testing infrastructure and CI/CD pipelines
+  - Integrated an ERP product for a large US Media/Marketing company
+  - Worked on several European funded projects
+
+- company:
+    name: AltFactor
+    website: https://altfactor.ro/
+    location:
+      city: Galati
+      country: Romania
+  position: Senior Software Developer
+  date:
+    start: 2011-05
+    end: 2013-07
+  keywords: [
+    Java/J2EE, Python, Go, NodeJS, Android, Neo4J, MongoDB, Postgres,
+    MySQL, Linux, Maven, SVN, Git
+  ]
+  highlights:
+  - Developed backends in Go, Java and Python
+  - Developed software for Samsung Smart TVs, and Android devices
+  - Introduced the teams to Git, and CI/CD practices
+  - Setup DB replication
+  - Worked on several national and European funded education projects, this included collaborating with some of the largest Romanian IT companies.
+
+- company:
+    name: Vector Art Media
+    website: https://vectorartmedia.com/
+    location:
+      city: Galati
+      country: Romania
+  position: Software Developer
+  date:
+    start: 2008-08
+    end: 2010-08
+  keywords: [PHP, C, JavaScript, MySQL, Linux]
+  highlights:
+  - Created and maintained several websites
+  - Security audits for maintained websites
+  - Managed services that were needed for the business, such as mail, network storage, and other required tooling
+
+- company:
+    name: RCS&RDS Romania
+    website: https://www.digiromania.ro
+    location:
+      city: Galati
+      country: Romania
+  position: Network Technician
+  date:
+    start: 2007-05
+    end: 2007-07
+  keywords: [Linux, Networking]
+  highlights:
+  - Technologies used: Linux, Wireshark, other network introspection tooling
+  - Discovered network work that had been affecting both customer PCs, and the ISPs network equipment, by analyzing strange network traffic that had been occurring- identified and fixed the infected computers as well as provided maintenance to the network equipment
+  - Configured different kinds of ZTE/Cisco L2/L3 switches and routers
+
+- company:
+    name: Self Employed
+    location:
+      city: Galati
+      country: Romania
+  position: ISP / Network Administrator
+  date:
+    start: 2003
+    end: 2007
+  keywords: [Linux, Networking]
+  highlights:
+  - Created and maintained a network spanning several blocks
+  - Installed and configured network equipment
+  - Configured linux servers as routers, NAS and QoS/traffic shaping

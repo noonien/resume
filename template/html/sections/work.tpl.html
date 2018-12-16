@@ -1,0 +1,21 @@
+{{if .}}
+<hr>
+<section id="employment">
+  <header>
+    <span class="fa fa-lg fa-building"></span>
+    <h2>Employment</h2>
+  </header>
+  {{range .}}
+  <div>
+    <h3>
+      <em>{{.Position}}</em>,
+      {{template "partials/institution" .Company}}
+    </h3>
+    {{template "partials/date" .Date}}
+    {{template "partials/keywords" .Keywords}}
+    {{template "partials/summary" .Summary}}
+    {{template "partials/highlights" .Highlights}}
+  </div>
+  {{end}}
+</section>
+{{end}}

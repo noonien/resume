@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F0F0;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Calibri', 'sans-serif';
+    color: #333;
+}
+
+#container {
+    margin: 0 auto;
+    border: 1px solid #E6E6E6;
+    padding: 1.5em 2em;
+    max-width: 900px;
+    background-color: #FFF;
+}
+
+#container > section {
+    margin-left: 100px;
+    position: relative;
+    display: block;
+}
+
+#container > header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#name > h3 {
+    margin: 0;
+}
+
+#links {
+    height: 100%;
+    margin-left: 90px;
+    text-align: center;
+}
+
+#links > .web {
+    display: none;
+}
+
+#links > .curl {
+    border: 1px solid gray;
+    padding: 2px 8px;
+    background-color: #282828;
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    font-weight: bold;
+    color: #00FF33;
+    text-align: left;
+}
+
+@media print {
+    body {
+        zoom: 85%;
+        background-color: #FFFFFF;
+    }
+
+    #container {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        max-width: none;
+    }
+
+    #links > .web {
+        display: block;
+    }
+
+    #links > .pdf {
+        display: none;
+    }
+
+    body #container > header {
+        padding: 0;
+    }
+}
+
+section > div {
+    margin-bottom: 40px;
+    page-break-inside: avoid;
+}
+
+span.fa
+{
+    font-size: 56px;
+    position: absolute;
+    top: 33px;
+    transform: translateY(-50%);
+    left: -100px;
+    color: #1a4367;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #EEE;
+}
+
+.tenure, .keywords {
+    font-size: 75%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 46px;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 30px;
+    color: #4376a2;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+a, a:visited {
+    color: #428BCA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.defunct {
+    color: #989898;
+    font-weight: bold;
+}
+
+#summary {
+    font-size: 150%;
+    margin-left: 0;
+    padding: 20px 0;
+}
+
+#summary > p > strong {
+    font-size: 1.25em;
+}
+
+#contact {
+    float: right;
+}
+
+#summary > header > .fa-info {
+    font-size: 70px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: normal;
+    top: 50%;
+    left: -85px;
+    transform: translateY(-50%);
+}
+
+#summary h2 {
+    display: none;
+}
+
+
+.label-keyword {
+    display: inline-block;
+    background: #e8f4ff;
+    color: black;
+    font-size: 0.9em;
+    padding: 5px;
+    border: 1px solid #357ebd;
+    border-radius: 5px;
+    margin-top: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.notes {
+    font-size: 10px;
+    display: block;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.card-skills {
+    position: relative;
+}
+.card-nested {
+    min-height: 0;
+    margin-bottom: 10px;
+    border-width: 1px 0 0 0;
+}
+.card {
+    background: #FFF;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.skill-level {
+    border-radius: 3px;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    width: 10px;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.skill-level .skill-progress {
+    position: absolute;
+    border-radius: 3px;
+    bottom: 0;
+    width: 100%;
+    -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+    height: 50%;
+    background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+    height: 70%;
+    background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+    height: 80%;
+    background: #428bca;
+}
+.skill-level .skill-progress.master {
+    height: 95%;
+    background: #5cb85c;
+}
+.skill-info {
+    margin-left: 10px;
+}
+@media (max-width: 480px) {
+    .skill-info {
+        margin-left: 20px;
+    }
+}
+.skill-info > strong {
+    font-weight: 400;
+    font-size: 24px;
+    color: #1d1d1d;
+    line-height: 24px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.card-skills {
+    position: relative;
+}
+
+.space-top {
+    margin-top: 5px;
+}
+
+#elevator-pitch {
+    text-align: center;
+    font-size: 24px;
+    color: #BFC1C3;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.res-label {
+    font-style: italic;
+}
