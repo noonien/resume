@@ -7,8 +7,8 @@ contact:
   website: https://mux.ro
 
 location:
-  city: London
-  country: UK
+  city: Galati
+  country: Romania
 
 social:
   - network: GitHub
@@ -16,6 +16,22 @@ social:
     url: https://github.com/noonien
 
 skills:
+- name: Polyglot
+  level: advanced
+  keywords: [
+    Go, Rust, Python, C#, C, C++, JavaScript,
+    Nim, Zig, Java
+  ]
+
+- name: Embedded Systems
+  level: advanced
+  keywords:
+  - ARM
+  - AVR
+  - Logic Analysis
+  - Low Level Comm Protocols
+  - Peripherals
+
 - name: Distributed Systems
   level: advanced
   keywords: [
@@ -32,31 +48,13 @@ skills:
     Replication
   ]
 
-- name: Polyglot
-  level: advanced
-  keywords: [
-    Go, Python, C#, C, C++, Java, CofeeScript, JavaScript,
-    Nim, Zig, Rust, Dart
-  ]
-
-- name: Embedded Systems
-  level: intermediate
-  keywords:
-  - ARM
-  - AVR
-  - Logic Analysis
-  - Low Level Comm Protocols
-  - Peripherals
-
 - name: Web Development
   level: master
   keywords:
+  - Svelte
   - JavaScript
-  - CoffeeScript
-  - Backbone
-  - Gulp
-  - CSS
-  - HTML
+  - Bundlers
+  - HTML/CSS
 
 
 work:
@@ -70,12 +68,13 @@ work:
   date:
     start: 2015-05
   keywords: [
-    Go, Kubernetes, PostgreSQL, CockroachDB, GKE, Docker, CoreOS, Linux,
-    Python, C#, C, C++,
+    Go, Rust, C#, C, C++, Python,
+    Kubernetes, PostgreSQL, CockroachDB, GKE, Docker, CoreOS, Linux,
     Redis, MongoDB, etcd, MySQL,
     Gitlab, Git
   ]
   highlights:
+  - Developed firmware and software for various physical products, mostly with ARM boards
   - Developed a render farm management system, this included services that dealt with user interaction, file synchronization, scalable work distribution, render management
   - Upgraded bitcoin mining firmware for auto-overclocking and better management
   - Developed internal products for workload, pipeline, and project management for game developers
