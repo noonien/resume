@@ -146,7 +146,7 @@ work:
   keywords: [Linux, Networking]
   highlights:
   - Technologies used: Linux, Wireshark, other network introspection tooling
-  - Discovered network work that had been affecting both customer PCs, and the ISPs network equipment, by analyzing strange network traffic that had been occurring- identified and fixed the infected computers as well as provided maintenance to the network equipment
+  - Discovered network worm that had been affecting both customer PCs, and the ISPs network equipment, by analyzing strange network traffic that had been occurring- identified and fixed the infected computers as well as provided maintenance to the network equipment
   - Configured different kinds of ZTE/Cisco L2/L3 switches and routers
 
 - company:
